@@ -1,0 +1,141 @@
+html,
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #f7f7f7;
+}
+
+/* Header Styling */
+header {
+  background-color: #F55A5A;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  color: white;
+  height: 55px;
+  padding: 0 20px;
+}
+
+.logo-container{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.logo-image {
+  background: transparent;
+  width: 35px;
+  transition: transform 0.5s ease;
+}
+.logo-image:hover {
+  transform: rotate(360deg);
+}
+
+header > h1 {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.nav-links ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: opacity 0.3s ease;
+}
+
+.nav-links a:hover {
+  opacity: 0.8;
+}
+
+/* Entry Component Styling */
+.journal-entry {
+  display: flex;
+  max-width: 900px;
+  margin: 30px auto;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.journal-entry:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.main-image-container {
+  width: 400px;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.main-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Details Section */
+.details {
+  padding: 16px;
+  flex: 1;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
+  color: #2b283a;
+  gap: 6px;
+}
+
+.location img {
+  width: 12px;
+  height: 12px;
+}
+
+.location a {
+  margin-left: 10px;
+  color: #918e9b;
+  text-decoration: underline;
+}
+
+.details h2 {
+  margin: 8px 0 4px;
+  font-size: 1.2rem;
+}
+
+.details p {
+  margin: 15px 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.details p:first-of-type {
+  font-weight: bold;
+  color: #2b283a;
+}
+
+
+@media (max-width: 768px) {
+  .journal-entry {
+    flex-direction: column;
+    max-width: 90%;
+  }
+
+  .main-image-container {
+    width: 100%;
+    height: 200px;
+  }
+
+  .details {
+    padding: 12px;
+  }
+}
