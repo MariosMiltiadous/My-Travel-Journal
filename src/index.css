@@ -55,6 +55,19 @@ header > h1 {
 }
 
 /* Entry Component Styling */
+.desciption-img {
+  width: 100%;
+}
+
+.entries-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
 .journal-entry {
   display: flex;
   max-width: 900px;
